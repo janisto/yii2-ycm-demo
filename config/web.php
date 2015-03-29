@@ -3,7 +3,11 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'basic',
+    'id' => 'yii2-ycm-demo',
+    'name' => 'YCM Demo',
+    //'version' => '1.0.0',
+    //'language' => 'fi',
+    //'timeZone' => 'Europe/Helsinki',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
@@ -34,8 +38,19 @@ $config = [
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
+                    'logVars' => [],
                 ],
             ],
+        ],
+        'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            'db' => 'db',
+            'sessionTable' => '{{%session}}',
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
