@@ -54,14 +54,21 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
+    'aliases' => [
+        '@uploadPath' => '@app/web/uploads', // @webroot isn't available yet (@webroot/uploads).
+        '@uploadUrl' => rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/') . '/uploads', // @web isn't available yet (@web/uploads).
+    ],
     'modules' => [
         'ycm' => [
             'class' => 'janisto\ycm\Module',
             'admins' => ['admin'],
             'urlPrefix' => 'admin',
             'registerModels' => [
-                'basic1' => 'app\models\Basic',
-                'basic2' => 'app\models\BasicSearch',
+                'basic' => 'app\models\Basic',
+                'basic2' => [
+                    'class' => 'app\models\BasicSearch',
+                    'folderName' => 'basic', // use the same path for uploads
+                ],
             ],
         ],
     ],
