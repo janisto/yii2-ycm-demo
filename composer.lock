@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f73233398de132bcd7da94a59ace45e0",
+    "hash": "7b38aab041ddadd29132974e651fe719",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -451,12 +451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/janisto/yii2-ycm.git",
-                "reference": "51e55c600eb18ee2be0c62a138752cf68fb20cc7"
+                "reference": "d531d98a6f4abf9d01e0cf2f73fa33f9848d9e2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/51e55c600eb18ee2be0c62a138752cf68fb20cc7",
-                "reference": "51e55c600eb18ee2be0c62a138752cf68fb20cc7",
+                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/d531d98a6f4abf9d01e0cf2f73fa33f9848d9e2a",
+                "reference": "d531d98a6f4abf9d01e0cf2f73fa33f9848d9e2a",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
                 "yii2",
                 "yii2-ycm"
             ],
-            "time": "2015-03-27 14:38:39"
+            "time": "2015-03-30 14:47:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
