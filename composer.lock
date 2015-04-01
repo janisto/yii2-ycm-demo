@@ -451,12 +451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/janisto/yii2-ycm.git",
-                "reference": "d531d98a6f4abf9d01e0cf2f73fa33f9848d9e2a"
+                "reference": "addd2559033028d6eb5900c5adf1531ca81d1f93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/d531d98a6f4abf9d01e0cf2f73fa33f9848d9e2a",
-                "reference": "d531d98a6f4abf9d01e0cf2f73fa33f9848d9e2a",
+                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/addd2559033028d6eb5900c5adf1531ca81d1f93",
+                "reference": "addd2559033028d6eb5900c5adf1531ca81d1f93",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
                 "yii2",
                 "yii2-ycm"
             ],
-            "time": "2015-03-30 14:47:00"
+            "time": "2015-03-30 22:56:48"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -560,28 +560,33 @@
         },
         {
             "name": "vova07/yii2-imperavi-widget",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vova07/yii2-imperavi-widget.git",
-                "reference": "bfe47768acaa7612a4c4158d2c2626681b82d993"
+                "reference": "958b9a4e325d907cb7c5d6d2a2ffb7771886ea79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/bfe47768acaa7612a4c4158d2c2626681b82d993",
-                "reference": "bfe47768acaa7612a4c4158d2c2626681b82d993",
+                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/958b9a4e325d907cb7c5d6d2a2ffb7771886ea79",
+                "reference": "958b9a4e325d907cb7c5d6d2a2ffb7771886ea79",
                 "shasum": ""
             },
             "require": {
                 "yiisoft/yii2": "*"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*"
+                "mikey179/vfsstream": "~1",
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
             },
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.0.x-dev"
+                },
+                "asset-installer-paths": {
+                    "bower-asset-library": "vendor/bower"
                 }
             },
             "autoload": {
@@ -613,7 +618,7 @@
                 "yii 2",
                 "yii2"
             ],
-            "time": "2015-03-08 17:22:24"
+            "time": "2015-03-30 21:04:15"
         },
         {
             "name": "vova07/yii2-select2-widget",
