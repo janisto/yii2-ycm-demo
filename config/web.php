@@ -65,8 +65,12 @@ $config = [
             'urlPrefix' => 'admin',
             'registerModels' => [
                 /**
+                 * Add models.
+                 *
                  * Usage:
-                 * 'name' => 'class definition'
+                 * [
+                 *   'name' => 'class definition',
+                 * ]
                  *
                  * name:
                  * It's used as a url slug and by default the folder name for uploads. You can override the upload
@@ -84,6 +88,65 @@ $config = [
                     'class' => 'app\models\BasicSearch',
                     'folderName' => 'basic', // use the same path for uploads
                 ],
+            ],
+            'registerControllers' => [
+                /**
+                 * Add controllers.
+                 *
+                 * Mapping from controller ID to controller configurations.
+                 * Each name-value pair specifies the configuration of a single controller.
+                 * A controller configuration can be either a string or an array.
+                 * If the former, the string should be the fully qualified class name of the controller.
+                 * If the latter, the array must contain a 'class' element which specifies
+                 * the controller's fully qualified class name, and the rest of the name-value pairs
+                 * in the array are used to initialize the corresponding controller properties. For example,
+                 *
+                 * [
+                 *   'account' => 'app\controllers\UserController',
+                 *   'article' => [
+                 *      'class' => 'app\controllers\PostController',
+                 *      'defaultAction' => 'xxx',
+                 *   ],
+                 * ]
+                 */
+                'test' => [
+                    'class' => 'app\controllers\admin\TestController',
+                    'defaultAction' => 'index', // override default value
+                ],
+            ],
+            'registerUrlRules' => [
+                /**
+                 * Add URL rules.
+                 *
+                 * Usage:
+                 * [
+                 *   'pattern' => 'route',
+                 *   'pattern' => 'route',
+                 * ]
+                 */
+                'test/<action:\w+>' => 'test/<action>',
+                'test' => 'test/index',
+            ],
+            'sidebarItems' => [
+                /**
+                 * Add Nav widget items.
+                 *
+                 * A list of items in the nav widget. Each array element represents a single
+                 * menu item which can be either a string or an array with the following structure:
+                 *
+                 * - label: string, required, the nav item label.
+                 * - url: optional, the item's URL. Defaults to "#".
+                 * - visible: boolean, optional, whether this menu item is visible. Defaults to true.
+                 * - linkOptions: array, optional, the HTML attributes of the item's link.
+                 * - options: array, optional, the HTML attributes of the item container (LI).
+                 * - active: boolean, optional, whether the item should be on active state or not.
+                 * - items: array|string, optional, the configuration array for creating a [[Dropdown]] widget,
+                 *   or a string representing the dropdown menu. Note that Bootstrap does not support sub-dropdown menus.
+                 *
+                 * If a menu item is a string, it will be rendered directly without HTML encoding.
+                 */
+                ['label' => 'Test index', 'url' => ['test/index']],
+                ['label' => 'Test view', 'url' => ['test/view']],
             ],
         ],
     ],
