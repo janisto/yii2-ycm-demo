@@ -61,29 +61,8 @@ $config = [
     'modules' => [
         'ycm' => [
             'class' => 'janisto\ycm\Module',
-            'admins' => ['admin'],
-            'urlPrefix' => 'admin',
-
-            /*
-            'maxColumns' => 6,
-            'uploadPath' => '/path/to/uploads',
-            'uploadUrl' => '/path/to/uploads',
-            'uploadPermissions' => 0775,
-            'uploadDeleteTempFile' => false,
-            'redactorImageUpload' => false,
-            'redactorImageUploadOptions' => [
-                'maxWidth' => 1920,
-                'maxHeight' => 1920,
-                'maxSize' => 1048576, // 1024 * 1024 = 1MB
-            ],
-            'redactorFileUpload' => false,
-            'redactorFileUploadOptions' => [
-                'maxWidth' => 1920,
-                'maxHeight' => 1920,
-                'maxSize' => 8388608, // 1024 * 1024 * 8 = 8MB
-            ],
-            */
-
+            'admins' => ['admin'], // admin usernames array
+            'urlPrefix' => 'admin', // url for ycm
             'registerModels' => [
                 /**
                  * Add models.
@@ -169,6 +148,24 @@ $config = [
                 ['label' => 'Test index', 'url' => ['test/index']],
                 ['label' => 'Test view', 'url' => ['test/view']],
             ],
+
+            /* 
+            'maxColumns' => 6,
+            'uploadPath' => '/path/to/uploads',
+            'uploadUrl' => '/path/to/uploads',
+            'uploadPermissions' => 0775,
+            'uploadDeleteTempFile' => false,
+            'redactorImageUpload' => false,
+            'redactorImageUploadOptions' => [
+                'maxWidth' => 1920,
+                'maxHeight' => 1920,
+                'maxSize' => 1048576, // 1024 * 1024 = 1MB
+            ],
+            'redactorFileUpload' => false,
+            'redactorFileUploadOptions' => [
+                'maxSize' => 8388608, // 1024 * 1024 * 8 = 8MB
+            ],
+            */
         ],
     ],
     'params' => $params,
