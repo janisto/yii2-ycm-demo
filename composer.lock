@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7b38aab041ddadd29132974e651fe719",
+    "hash": "56edba605ad7b80708d1a83ecbfd5a5e",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -60,16 +60,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jquery/jquery.git",
-                "reference": "8f2a9d9272d6ed7f32d3a484740ab342c02541e0"
+                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery/zipball/8f2a9d9272d6ed7f32d3a484740ab342c02541e0",
-                "reference": "8f2a9d9272d6ed7f32d3a484740ab342c02541e0",
+                "url": "https://api.github.com/repos/jquery/jquery/zipball/7751e69b615c6eca6f783a81e292a55725af6b85",
+                "reference": "7751e69b615c6eca6f783a81e292a55725af6b85",
                 "shasum": ""
             },
             "require-dev": {
@@ -84,6 +84,7 @@
                 "bower-asset-ignore": [
                     "**/.*",
                     "build",
+                    "dist/cdn",
                     "speed",
                     "test",
                     "*.md",
@@ -128,16 +129,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.62",
+            "version": "3.1.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "da1a274cefa18a52a0519ac7ffe8e8d31e950eae"
+                "reference": "c40c7287eadc31e341ebbf0c02352eb55b9cbc48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/da1a274cefa18a52a0519ac7ffe8e8d31e950eae",
-                "reference": "da1a274cefa18a52a0519ac7ffe8e8d31e950eae",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/c40c7287eadc31e341ebbf0c02352eb55b9cbc48",
+                "reference": "c40c7287eadc31e341ebbf0c02352eb55b9cbc48",
                 "shasum": ""
             },
             "require": {
@@ -180,16 +181,16 @@
         },
         {
             "name": "bower-asset/jqueryui-timepicker-addon",
-            "version": "v1.5.2",
+            "version": "v1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trentrichardson/jQuery-Timepicker-Addon.git",
-                "reference": "feafd1fbbc8c729a3bee47e43c82da111a9dfdff"
+                "reference": "211a104f04f2ca0faf44383e94ef71f5488d436f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trentrichardson/jQuery-Timepicker-Addon/zipball/feafd1fbbc8c729a3bee47e43c82da111a9dfdff",
-                "reference": "feafd1fbbc8c729a3bee47e43c82da111a9dfdff",
+                "url": "https://api.github.com/repos/trentrichardson/jQuery-Timepicker-Addon/zipball/211a104f04f2ca0faf44383e94ef71f5488d436f",
+                "reference": "211a104f04f2ca0faf44383e94ef71f5488d436f",
                 "shasum": ""
             },
             "type": "bower-asset-library"
@@ -447,16 +448,16 @@
         },
         {
             "name": "janisto/yii2-ycm",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/janisto/yii2-ycm.git",
-                "reference": "addd2559033028d6eb5900c5adf1531ca81d1f93"
+                "reference": "f274c8cf418f7dbee65f4e54a3df0333dd389287"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/addd2559033028d6eb5900c5adf1531ca81d1f93",
-                "reference": "addd2559033028d6eb5900c5adf1531ca81d1f93",
+                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/f274c8cf418f7dbee65f4e54a3df0333dd389287",
+                "reference": "f274c8cf418f7dbee65f4e54a3df0333dd389287",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +505,7 @@
                 "yii2",
                 "yii2-ycm"
             ],
-            "time": "2015-03-30 22:56:48"
+            "time": "2015-05-07 13:58:47"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -560,16 +561,16 @@
         },
         {
             "name": "vova07/yii2-imperavi-widget",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vova07/yii2-imperavi-widget.git",
-                "reference": "958b9a4e325d907cb7c5d6d2a2ffb7771886ea79"
+                "reference": "d51f5708f123984cb16644c944fdfeb49de45a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/958b9a4e325d907cb7c5d6d2a2ffb7771886ea79",
-                "reference": "958b9a4e325d907cb7c5d6d2a2ffb7771886ea79",
+                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/d51f5708f123984cb16644c944fdfeb49de45a2d",
+                "reference": "d51f5708f123984cb16644c944fdfeb49de45a2d",
                 "shasum": ""
             },
             "require": {
@@ -618,30 +619,42 @@
                 "yii 2",
                 "yii2"
             ],
-            "time": "2015-03-30 21:04:15"
+            "time": "2015-04-03 08:07:30"
         },
         {
             "name": "vova07/yii2-select2-widget",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vova07/yii2-select2-widget.git",
-                "reference": "9c7af864c8f797307156fcbf69fd7533975f2d05"
+                "reference": "8b1a0907c24caf7471bdb5f6946f04a5920a1176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vova07/yii2-select2-widget/zipball/9c7af864c8f797307156fcbf69fd7533975f2d05",
-                "reference": "9c7af864c8f797307156fcbf69fd7533975f2d05",
+                "url": "https://api.github.com/repos/vova07/yii2-select2-widget/zipball/8b1a0907c24caf7471bdb5f6946f04a5920a1176",
+                "reference": "8b1a0907c24caf7471bdb5f6946f04a5920a1176",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/select2": "3.*",
                 "yiisoft/yii2": "*"
             },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
             "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0.x-dev"
+                },
+                "asset-installer-paths": {
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "vova07\\select2\\": ""
+                    "vova07\\select2\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -651,19 +664,24 @@
             "authors": [
                 {
                     "name": "Crudu Vasile",
-                    "email": "bazillio07@yandex.ru"
+                    "email": "bazillio07@yandex.ru",
+                    "homepage": "https://github.com/vova07",
+                    "role": "Developer"
                 }
             ],
             "description": "The select2 widget for Yii framework.",
+            "homepage": "https://github.com/vova07/yii2-select2-widget",
             "keywords": [
+                "extension",
                 "select",
                 "select 2",
                 "select2",
                 "widget",
+                "yii",
                 "yii 2",
                 "yii2"
             ],
-            "time": "2015-01-26 09:31:57"
+            "time": "2015-04-05 21:07:23"
         },
         {
             "name": "yiisoft/yii2",
@@ -1244,9 +1262,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "janisto/yii2-ycm": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
