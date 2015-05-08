@@ -9,7 +9,7 @@ Extract files to a directory named yii2-ycm-demo that is directly under the web 
 
 You can then access the application through the following URL: http://localhost/yii2-ycm-demo/web/
 
-$ php composer.phar global require "fxp/composer-asset-plugin:1.0.0"
+$ php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
 
 $ cd /path/to/web/root
 
@@ -20,5 +20,7 @@ $ cd yii2-ycm-demo
 $ php composer.phar self-update
 
 $ php composer.phar install --prefer-dist
+
+Edit config/db.php if needed
 
 $ php yii migrate/up --interactive=0
