@@ -67,4 +67,34 @@ class BasicSearch extends Basic
 
         return $dataProvider;
     }
+
+    /**
+     * Config for attribute widgets (ycm module)
+     *
+     * @return array
+     */
+    public function attributeWidgets()
+    {
+        return [
+            ['content', 'wysiwyg'],
+            ['public', 'checkbox'],
+            ['created_at', 'disabled'],
+            ['updated_at', 'disabled'],
+        ];
+    }
+
+    /**
+     * Config for list view (ycm module)
+     *
+     * @return array
+     */
+    public function gridViewColumns()
+    {
+        return [
+            'id',
+            'title',
+            'created_at:datetime',
+            'updated_at:datetime',
+        ];
+    }
 }
