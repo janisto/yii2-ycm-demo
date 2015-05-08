@@ -3,6 +3,8 @@
 namespace app\models;
 
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\Expression;
 
 /**
  * This is the model class for table "{{%basic}}".
@@ -16,6 +18,19 @@ use Yii;
  */
 class Basic extends \yii\db\ActiveRecord
 {
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'value' => new Expression('UTC_TIMESTAMP()'), // one could also use NOW()
+            ],
+        ];
+    }
+
     /**
      * @inheritdoc
      */
