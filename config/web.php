@@ -108,7 +108,8 @@ $config = [
                 'basic' => 'app\models\Basic',
                 'basic2' => [
                     'class' => 'app\models\BasicSearch',
-                    'folderName' => 'basic', // use the same path for uploads
+                    'folderName' => 'basic', // Use the same path for uploads
+                    //'public' => 1, // Set 1 by default
                 ],
             ],
             'registerControllers' => [

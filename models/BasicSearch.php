@@ -5,13 +5,21 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Basic;
 
 /**
  * BasicSearch represents the model behind the search form about `app\models\Basic`.
  */
 class BasicSearch extends Basic
 {
+    public $adminNames = ['Test2 datas', 'test2 data', 'test2 datas']; // admin interface, singular, plural
+    //public $hideCreateAction = true;
+    //public $hideUpdateAction = true;
+    public $hideDeleteAction = true;
+    public $downloadCsv = true;
+    public $downloadMsCsv = true;
+    public $downloadExcel = true;
+    public $excludeDownloadFields = ['created_at', 'updated_at'];
+
     /**
      * @inheritdoc
      */
@@ -41,10 +49,15 @@ class BasicSearch extends Basic
      */
     public function search($params)
     {
-        $query = Basic::find();
+        $query = BasicSearch::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort' => [
+                'defaultOrder' => [
+                    'id' => SORT_DESC,
+                ]
+            ],
         ]);
 
         $this->load($params);
@@ -69,7 +82,7 @@ class BasicSearch extends Basic
     }
 
     /**
-     * Config for attribute widgets (ycm module)
+     * Config for attribute widgets (ycm)
      *
      * @return array
      */
@@ -84,7 +97,20 @@ class BasicSearch extends Basic
     }
 
     /**
-     * Config for list view (ycm module)
+     * Checkbox choices for public (ycm)
+     *
+     * @return array
+     */
+    public function publicChoices()
+    {
+        return [
+            '0' => 'No',
+            '1' => 'Yes',
+        ];
+    }
+
+    /**
+     * Config for list view (ycm)
      *
      * @return array
      */
@@ -93,6 +119,25 @@ class BasicSearch extends Basic
         return [
             'id',
             'title',
+            /*
+            [
+                'attribute' => 'public',
+                'filter' => ['0' => 'No', '1' => 'Yes'],
+                'value' => function ($model) {
+                    if ($model->public === 1) {
+                        return 'Yes';
+                    }
+                    return 'No';
+                },
+            ],
+            */
+            [
+                'attribute' => 'public',
+                'filter' => $this->publicChoices(),
+                'value' => function ($model) {
+                    return $this->publicChoices()[$model->public];
+                },
+            ],
             'created_at:datetime',
             'updated_at:datetime',
         ];
