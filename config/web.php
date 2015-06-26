@@ -58,6 +58,12 @@ $config = [
             'class' => 'yii\web\UrlManager',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'rules' => [
+                '' => 'site/index',
+                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+            ],
         ],
         'session' => [
             'class' => 'yii\web\DbSession',
@@ -173,9 +179,9 @@ $config = [
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
 
-    // Debug module seems to break some functionality.
-    //$config['bootstrap'][] = 'debug';
-    //$config['modules']['debug'] = 'yii\debug\Module';
+    // Debug module seems to break some functionality with PHP 5.4.
+    $config['bootstrap'][] = 'debug';
+    $config['modules']['debug'] = 'yii\debug\Module';
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = 'yii\gii\Module';
