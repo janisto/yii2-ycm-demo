@@ -1,12 +1,13 @@
 <?php
 
+use app\migrations\Migration;
 use yii\db\Schema;
-use yii\db\Migration;
 
 class m150329_210651_create_basic_table extends Migration
 {
-    protected $tableOptions = 'ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci';
-
+    /**
+     * @inheritdoc
+     */
     public function up()
     {
         $this->createTable('{{%basic}}', [
@@ -19,6 +20,9 @@ class m150329_210651_create_basic_table extends Migration
         ], $this->tableOptions);
     }
 
+    /**
+     * @inheritdoc
+     */
     public function down()
     {
         $this->dropTable('{{%basic}}');
