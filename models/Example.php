@@ -52,7 +52,6 @@ class Example extends \yii\db\ActiveRecord
             [['field_date', 'field_time', 'field_datetime', 'field_selectMultiple'], 'safe'],
             [['field_boolean', 'field_checkbox'], 'integer'],
             [['field_widget', 'field_select', 'field_text', 'field_hidden', 'field_password', 'field_radio', 'field_dropdown', 'field_listbox', 'field_checkboxList', 'field_radioList', 'field_disabled', 'field_hide', 'field_html5'], 'string', 'max' => 255],
-
             [['field_image'], 'image', 'maxSize' => 1024 * 1024 * 1, 'maxWidth' => 2560, 'maxHeight' => 2560],
             [['field_file'], 'file', 'maxSize' => 1024 * 1024 * 1],
         ];
@@ -135,7 +134,6 @@ class Example extends \yii\db\ActiveRecord
             ['field_wysiwyg', 'wysiwyg'],
             //['field_wysiwyg', 'wysiwyg', 'options' => ['class' => 'extra-class'], 'settings' => ['minHeight' => 80, 'plugins' => null, 'buttons' => ['formatting', 'bold', 'italic']]],
 
-            //['field_date', 'date'],
             ['field_date', 'date'],
             //['field_date', 'date', 'options' => ['class' => 'extra-class'], 'clientOptions' => ['changeMonth' => true, 'changeYear' => true, 'yearRange' => '1900:2000', 'dateFormat' => 'yy-mm-dd']],
 
@@ -297,11 +295,13 @@ class Example extends \yii\db\ActiveRecord
     }
 
     /**
-     * Grid view columns (ycm)
+     * Grid view columns for ActiveDataProvider (ycm)
      *
      * @return array
      *
+     * @see http://www.yiiframework.com/doc-2.0/guide-output-data-widgets.html#column-classes
      * @see http://www.yiiframework.com/doc-2.0/guide-output-formatter.html#other-formatters
+     * @see http://www.bsourcecode.com/yiiframework2/gridview-in-yiiframework-2-0/#GridView-Column-Content-Options
      */
     public function gridViewColumns()
     {
@@ -325,13 +325,26 @@ class Example extends \yii\db\ActiveRecord
                 'format' => ['date', 'php:d.m.Y H:i:s']
             ],
 
+            //'field_select',
+            [
+                'label'=>'Field Select Name',
+                'attribute' => 'field_select',
+                'value' => function ($model) {
+                    if (isset($this->field_selectChoices()[$model->field_select])) {
+                        return $this->field_selectChoices()[$model->field_select];
+                    }
+                    //return 'No data';
+                },
+            ],
         ];
     }
 
     /**
-     * Grid view sort (ycm)
+     * Grid view sort for ActiveDataProvider (ycm)
      *
      * @return array
+     *
+     * @see http://www.yiiframework.com/doc-2.0/guide-output-data-widgets.html#sorting-data
      */
     public function gridViewSort()
     {
