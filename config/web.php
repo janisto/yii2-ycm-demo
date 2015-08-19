@@ -111,6 +111,7 @@ $config = [
                     'folderName' => 'basic', // Use the same path for uploads
                     //'public' => 1, // Set 1 by default
                 ],
+                'example' => 'app\models\Example',
             ],
             'registerControllers' => [
                 /**
