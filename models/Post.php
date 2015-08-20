@@ -71,7 +71,6 @@ class Post extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            //[['title'], 'required'],
             [['content'], 'string'],
             [['title'], 'string', 'max' => 255],
             [['assignedCategories'], 'safe'],

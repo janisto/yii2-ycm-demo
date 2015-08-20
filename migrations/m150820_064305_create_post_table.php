@@ -12,7 +12,7 @@ class m150820_064305_create_post_table extends Migration
     {
         $this->createTable('{{%post}}', [
             'id' => Schema::TYPE_PK,
-            'title' => Schema::TYPE_STRING . ' NOT NULL',
+            'title' => Schema::TYPE_STRING,
             'content' => Schema::TYPE_TEXT,
         ], $this->tableOptions);
     }
