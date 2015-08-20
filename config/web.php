@@ -114,6 +114,8 @@ $config = [
                 'example' => 'app\models\Example',
                 'post' => 'app\models\Post',
                 'category' => 'app\models\Category',
+                'blog' => 'app\models\Blog',
+                'department' => 'app\models\Department',
             ],
             'registerControllers' => [
                 /**
