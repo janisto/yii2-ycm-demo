@@ -1,26 +1,30 @@
 # yii2-ycm-demo
 
+### Install via Composer
 
-## Install
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 
-Create database yii2-ycm-demo
+You can then install this demo using the following command:
 
-Extract files to a directory named yii2-ycm-demo that is directly under the web root.
-
-You can then access the application through the following URL: http://localhost/yii2-ycm-demo/web/
-
-$ php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
-
+~~~
 $ cd /path/to/web/root
+$ php composer.phar global require "fxp/composer-asset-plugin:~1.0.0"
+$ php composer.phar create-project --prefer-dist --stability=dev janisto/yii2-ycm-demo yii2-ycm-demo
+~~~
 
-$ git clone git@github.com:janisto/yii2-ycm-demo.git
-
-$ cd yii2-ycm-demo
-
-$ php composer.phar self-update
-
-$ php composer.phar install --prefer-dist
+Create database `yii2-ycm-demo`
 
 Edit config/db.php if needed
 
+Run migrations:
+~~~
 $ php yii migrate/up --interactive=0
+~~~
+
+Now you should be able to access the demo through the following URL, assuming `yii2-ycm-demo` is the directory
+directly under the Web root.
+
+~~~
+http://localhost/yii2-ycm-demo/web/admin
+~~~
