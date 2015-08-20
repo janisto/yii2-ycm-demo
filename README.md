@@ -1,5 +1,9 @@
 # yii2-ycm-demo
 
+- [Github Project](https://github.com/janisto/yii2-ycm)
+- [Demo](https://github.com/janisto/yii2-ycm-demo)
+- [Forum topic](http://www.yiiframework.com/forum/index.php/topic/67352-module-ycm-yii-2-content-management-module/)
+
 ### Install via Composer
 
 If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
