@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use janisto\ycm\behaviors\FileBehavior;
 
 /**
  * This is the model class for table "{{%example}}".
@@ -34,6 +35,19 @@ use Yii;
  */
 class Example extends \yii\db\ActiveRecord
 {
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => FileBehavior::className(),
+                'folderName' => 'example',
+            ]
+        ];
+    }
+
     /**
      * @inheritdoc
      */

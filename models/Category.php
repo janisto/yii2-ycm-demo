@@ -89,4 +89,18 @@ class Category extends \yii\db\ActiveRecord
             'description:html',
         ];
     }
+
+    /**
+     * Grid view sort for ActiveDataProvider (ycm)
+     *
+     * @return array
+     */
+    public function gridViewSort()
+    {
+        return [
+            'defaultOrder' => [
+                //'id' => SORT_DESC,
+            ]
+        ];
+    }
 }
