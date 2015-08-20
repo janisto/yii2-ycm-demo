@@ -138,6 +138,7 @@ class Blog extends \yii\db\ActiveRecord
                     if (isset($this->department_idChoices()[$model->department_id])) {
                         return $this->department_idChoices()[$model->department_id];
                     }
+                    return null;
                 },
             ],
             'title',

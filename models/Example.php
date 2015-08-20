@@ -341,14 +341,24 @@ class Example extends \yii\db\ActiveRecord
 
             //'field_select',
             [
-                'label'=>'Field Select Name',
+                'label'=>'Field Select Value',
                 'attribute' => 'field_select',
                 'value' => function ($model) {
                     if (isset($this->field_selectChoices()[$model->field_select])) {
                         return $this->field_selectChoices()[$model->field_select];
                     }
-                    //return 'No data';
+                    return null;
                 },
+            ],
+
+            //'field_image',
+            [
+                'attribute' => 'field_image',
+                'format' => ['image', ['width' => '100', 'height' => '100']],
+                'value' => function($model) {
+                    return $model->getFileUrl('field_image');
+                },
+                'contentOptions' => ['class' => 'image-class'],
             ],
         ];
     }
