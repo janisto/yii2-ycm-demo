@@ -228,16 +228,16 @@
         },
         {
             "name": "bower-asset/select2",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/select2/select2.git",
-                "reference": "6633cda9061d9fc65075dd140c63f9a6adbcbd72"
+                "reference": "a0ddc8c9466cb94a026e80b20264e8feacc4345b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/6633cda9061d9fc65075dd140c63f9a6adbcbd72",
-                "reference": "6633cda9061d9fc65075dd140c63f9a6adbcbd72",
+                "url": "https://api.github.com/repos/select2/select2/zipball/a0ddc8c9466cb94a026e80b20264e8feacc4345b",
+                "reference": "a0ddc8c9466cb94a026e80b20264e8feacc4345b",
                 "shasum": ""
             },
             "require": {
