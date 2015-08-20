@@ -11,7 +11,7 @@ use yii\data\ActiveDataProvider;
  */
 class BasicSearch extends Basic
 {
-    public $adminNames = ['Test2 datas', 'test2 data', 'test2 datas']; // admin interface, singular, plural
+    public $adminNames = ['Basic searches', 'basic search', 'basic searches']; // admin interface, singular, plural
     //public $hideCreateAction = true;
     //public $hideUpdateAction = true;
     public $hideDeleteAction = true;
