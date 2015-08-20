@@ -112,6 +112,8 @@ $config = [
                     //'public' => 1, // Set 1 by default
                 ],
                 'example' => 'app\models\Example',
+                'post' => 'app\models\Post',
+                'category' => 'app\models\Category',
             ],
             'registerControllers' => [
                 /**
