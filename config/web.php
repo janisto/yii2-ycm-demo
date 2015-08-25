@@ -60,6 +60,10 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '' => 'site/index',
+
+                'common/index'=>'common/index',
+                'common/<slug:[a-zA-Z0-9-]+>'=>'common/view',
+
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
@@ -116,6 +120,7 @@ $config = [
                 'category' => 'app\models\Category',
                 'blog' => 'app\models\Blog',
                 'department' => 'app\models\Department',
+                'common' => 'app\models\CommonAdmin',
             ],
             'registerControllers' => [
                 /**
