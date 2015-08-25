@@ -1,4 +1,8 @@
 <?php
+
+use yii\helpers\Html;
+use yii\helpers\Url;
+
 /* @var $this yii\web\View */
 $this->title = 'My Yii Application';
 ?>
@@ -10,6 +14,13 @@ $this->title = 'My Yii Application';
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+
+        <p>
+            <?= Html::a('Basic model examples', ['basic/index']) ?>
+        </p>
+        <p>
+            <?= Html::a('Common model examples', ['common/index']) ?>
+        </p>
     </div>
 
     <div class="body-content">
