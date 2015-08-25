@@ -96,7 +96,7 @@ class BasicSearch extends Basic
     }
 
     /**
-     * Config for list view (ycm)
+     * Grid view columns for ActiveDataProvider (ycm)
      *
      * @return array
      */
