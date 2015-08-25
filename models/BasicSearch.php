@@ -25,8 +25,9 @@ class BasicSearch extends Basic
      */
     public function rules()
     {
+        // override rules() implementation in the parent class
         return [
-            [['id', 'public'], 'integer'],
+            [['id'], 'integer'],
             [['title', 'content', 'created_at', 'updated_at'], 'safe'],
         ];
     }
@@ -70,7 +71,6 @@ class BasicSearch extends Basic
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'public' => $this->public,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ]);
@@ -90,22 +90,8 @@ class BasicSearch extends Basic
     {
         return [
             ['content', 'wysiwyg'],
-            ['public', 'checkbox'],
             ['created_at', 'disabled'],
             ['updated_at', 'disabled'],
-        ];
-    }
-
-    /**
-     * Checkbox choices for public (ycm)
-     *
-     * @return array
-     */
-    public function publicChoices()
-    {
-        return [
-            '0' => 'No',
-            '1' => 'Yes',
         ];
     }
 
@@ -119,25 +105,6 @@ class BasicSearch extends Basic
         return [
             'id',
             'title',
-            /*
-            [
-                'attribute' => 'public',
-                'filter' => ['0' => 'No', '1' => 'Yes'],
-                'value' => function ($model) {
-                    if ($model->public === 1) {
-                        return 'Yes';
-                    }
-                    return 'No';
-                },
-            ],
-            */
-            [
-                'attribute' => 'public',
-                'filter' => $this->publicChoices(),
-                'value' => function ($model) {
-                    return $this->publicChoices()[$model->public];
-                },
-            ],
             'created_at:datetime',
             'updated_at:datetime',
         ];

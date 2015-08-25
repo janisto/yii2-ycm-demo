@@ -21,9 +21,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'content') ?>
 
-    <?= $form->field($model, 'public') ?>
-
-    <?= $form->field($model, 'created_at') ?>
+    <?php // echo $form->field($model, 'created_at') ?>
 
     <?php // echo $form->field($model, 'updated_at') ?>
 
