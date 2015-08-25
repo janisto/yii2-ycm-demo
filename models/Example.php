@@ -219,7 +219,7 @@ class Example extends \yii\db\ActiveRecord
             //['field_html5', 'text', 'input' => 'time'],
             //['field_html5', 'text', 'input' => 'url'],
             //['field_html5', 'text', 'input' => 'week'],
-            ['field_html5', 'text', 'input' => 'number', 'min' => 1, 'max' => 5, 'hint' => 'Numerer between 1 - 5.']
+            ['field_html5', 'text', 'input' => 'number', 'min' => 1, 'max' => 5, 'hint' => 'Number between 1 - 5.']
 
         ];
     }
