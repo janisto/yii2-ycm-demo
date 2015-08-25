@@ -62,7 +62,7 @@ class Common extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['slug', 'status', 'title'], 'required'],
+            [['status', 'title'], 'required'],
             [['status'], 'integer'],
             [['content'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
