@@ -66,7 +66,7 @@ class CommonController extends Controller
         if (($model = Common::findOne(['slug' => $slug, 'status' => Common::STATUS_VISIBLE])) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('Page not found.');
+            throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
 }
