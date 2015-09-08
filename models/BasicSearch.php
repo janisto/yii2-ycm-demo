@@ -23,22 +23,11 @@ class BasicSearch extends Basic
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
-        // override rules() implementation in the parent class
-        return [
-            [['id'], 'integer'],
-            [['title', 'content', 'created_at', 'updated_at'], 'safe'],
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function scenarios()
     {
-        // bypass scenarios() implementation in the parent class
-        return Model::scenarios();
+        $scenarios = parent::scenarios();
+        $scenarios['ycm-search'] = ['title', 'created_at', 'updated_at']; // Add only attributes that are used in grid view columns
+        return $scenarios;
     }
 
     /**

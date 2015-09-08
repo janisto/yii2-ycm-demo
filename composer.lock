@@ -228,16 +228,16 @@
         },
         {
             "name": "bower-asset/select2",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/select2/select2.git",
-                "reference": "a0ddc8c9466cb94a026e80b20264e8feacc4345b"
+                "reference": "95a977f674b6938af55ec5f28b7772df93786c5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/a0ddc8c9466cb94a026e80b20264e8feacc4345b",
-                "reference": "a0ddc8c9466cb94a026e80b20264e8feacc4345b",
+                "url": "https://api.github.com/repos/select2/select2/zipball/95a977f674b6938af55ec5f28b7772df93786c5c",
+                "reference": "95a977f674b6938af55ec5f28b7772df93786c5c",
                 "shasum": ""
             },
             "require": {
@@ -451,16 +451,16 @@
         },
         {
             "name": "janisto/yii2-ycm",
-            "version": "0.3.0",
+            "version": "0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/janisto/yii2-ycm.git",
-                "reference": "b1f01d5fbfc0ab4b09084c310ec741507e8d38ed"
+                "reference": "39fb5ca2898d5de0134451d1c08ee84404b74e8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/b1f01d5fbfc0ab4b09084c310ec741507e8d38ed",
-                "reference": "b1f01d5fbfc0ab4b09084c310ec741507e8d38ed",
+                "url": "https://api.github.com/repos/janisto/yii2-ycm/zipball/39fb5ca2898d5de0134451d1c08ee84404b74e8a",
+                "reference": "39fb5ca2898d5de0134451d1c08ee84404b74e8a",
                 "shasum": ""
             },
             "require": {
@@ -508,7 +508,7 @@
                 "yii2",
                 "yii2-ycm"
             ],
-            "time": "2015-06-26 09:05:26"
+            "time": "2015-09-08 11:14:45"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -565,16 +565,16 @@
         },
         {
             "name": "vova07/yii2-imperavi-widget",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vova07/yii2-imperavi-widget.git",
-                "reference": "ebbcd63e27ffacafffaf18ca6c6df4c0e65dceb6"
+                "reference": "afb59bff9a4ce18f5ecd144cf1fe224bf939ec15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/ebbcd63e27ffacafffaf18ca6c6df4c0e65dceb6",
-                "reference": "ebbcd63e27ffacafffaf18ca6c6df4c0e65dceb6",
+                "url": "https://api.github.com/repos/vova07/yii2-imperavi-widget/zipball/afb59bff9a4ce18f5ecd144cf1fe224bf939ec15",
+                "reference": "afb59bff9a4ce18f5ecd144cf1fe224bf939ec15",
                 "shasum": ""
             },
             "require": {
@@ -623,19 +623,19 @@
                 "yii 2",
                 "yii2"
             ],
-            "time": "2015-07-30 14:33:58"
+            "time": "2015-08-21 11:36:17"
         },
         {
             "name": "vova07/yii2-select2-widget",
             "version": "0.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vova07/yii2-select2-widget.git",
+                "url": "git@github.com:vova07/yii2-select2-widget.git",
                 "reference": "8b1a0907c24caf7471bdb5f6946f04a5920a1176"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vova07/yii2-select2-widget/zipball/8b1a0907c24caf7471bdb5f6946f04a5920a1176",
+                "url": "https://api.github.com/repos/vova07/yii2-select2-widget/zipball/4f7a7702b6b8bf1007f153b3f2fdc10e02af3117",
                 "reference": "8b1a0907c24caf7471bdb5f6946f04a5920a1176",
                 "shasum": ""
             },

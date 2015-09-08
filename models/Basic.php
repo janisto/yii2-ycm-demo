@@ -44,7 +44,7 @@ class Basic extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title'], 'required'],
+            [['title'], 'required', 'on' => 'default'], // Require title in default scenario
             [['content'], 'string'],
             [['created_at', 'updated_at'], 'safe'],
             [['title'], 'string', 'max' => 255]
